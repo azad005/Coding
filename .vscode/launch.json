@@ -6,6 +6,125 @@
     "configurations": [
         {
             "type": "java",
+            "name": "KnapsackSolver",
+            "request": "launch",
+            "mainClass": "KnapsackSolver",
+            "projectName": "coding_azd_d4b888cf"
+        },
+        {
+            "type": "java",
+            "name": "Knapsack",
+            "request": "launch",
+            "mainClass": "Knapsack",
+            "projectName": "coding_azd_d4b888cf"
+        },
+        {
+            "type": "java",
+            "name": "Dijkstra",
+            "request": "launch",
+            "mainClass": "Dijkstra",
+            "projectName": "coding_azd_d4b888cf"
+        },
+        {
+            "type": "java",
+            "name": "KnapsackThief",
+            "request": "launch",
+            "mainClass": "KnapsackThief",
+            "projectName": "coding_azd_d4b888cf"
+        },
+        {
+            "type": "java",
+            "name": "KnapsackBB",
+            "request": "launch",
+            "mainClass": "KnapsackBB",
+            "projectName": "coding_azd_d4b888cf"
+        },
+        {
+            "type": "java",
+            "name": "NQueens",
+            "request": "launch",
+            "mainClass": "NQueens",
+            "projectName": "coding_azd_d4b888cf"
+        },
+        {
+            "type": "java",
+            "name": "LongestCommonSubsequence",
+            "request": "launch",
+            "mainClass": "LongestCommonSubsequence",
+            "projectName": "coding_azd_d4b888cf"
+        },
+        {
+            "type": "java",
+            "name": "DijkstraShortestPath",
+            "request": "launch",
+            "mainClass": "DijkstraShortestPath",
+            "projectName": "coding_azd_d4b888cf"
+        },
+        {
+            "type": "java",
+            "name": "GreedyKnapsack",
+            "request": "launch",
+            "mainClass": "GreedyKnapsack",
+            "projectName": "coding_azd_d4b888cf"
+        },
+        {
+            "type": "java",
+            "name": "ActivitySelection",
+            "request": "launch",
+            "mainClass": "ActivitySelection",
+            "projectName": "coding_azd_d4b888cf"
+        },
+        {
+            "type": "java",
+            "name": "TaskScheduling",
+            "request": "launch",
+            "mainClass": "TaskScheduling",
+            "projectName": "coding_azd_d4b888cf"
+        },
+        {
+            "type": "java",
+            "name": "MergeShort",
+            "request": "launch",
+            "mainClass": "MergeShort",
+            "projectName": "coding_azd_d4b888cf"
+        },
+        {
+            "type": "java",
+            "name": "MatrixChainMultiplication",
+            "request": "launch",
+            "mainClass": "MatrixChainMultiplication",
+            "projectName": "coding_azd_d4b888cf"
+        },
+        {
+            "type": "java",
+            "name": "Short",
+            "request": "launch",
+            "mainClass": "Short",
+            "projectName": "coding_azd_d4b888cf"
+        },
+        {
+            "type": "java",
+            "name": "GenerateBill",
+            "request": "launch",
+            "mainClass": "GenerateBill",
+            "projectName": "coding_azd_d4b888cf"
+        },
+        {
+            "type": "java",
+            "name": "CountSort",
+            "request": "launch",
+            "mainClass": "CountSort",
+            "projectName": "coding_azd_d4b888cf"
+        },
+        {
+            "type": "java",
+            "name": "InsertionSort",
+            "request": "launch",
+            "mainClass": "InsertionSort",
+            "projectName": "coding_azd_d4b888cf"
+        },
+        {
+            "type": "java",
             "name": "Communicate",
             "request": "launch",
             "mainClass": "Communicate",

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Signup | YourBrand</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                        url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .logo img {
+            height: 50px;
+            margin-bottom: 10px;
+        }
+        
+        .logo h2 {
+            color: #333;
+            font-weight: 600;
+            font-size: 1.5rem;
+        }
+
+        .auth-container {
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 450px;
+            text-align: center;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: #333;
+            font-weight: 600;
+        }
+
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .auth-options {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .auth-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 14px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: white;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .auth-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .auth-btn img {
+            width: 22px;
+            height: 22px;
+            object-fit: contain;
+        }
+
+        .google {
+            color: #333;
+            border-color: #e0e0e0;
+        }
+
+        .google:hover {
+            background-color: #f8f8f8;
+        }
+
+        .facebook {
+            color: white;
+            background-color: #1877F2;
+            border-color: #1877F2;
+        }
+
+        .facebook:hover {
+            background-color: #166fe5;
+        }
+
+        .email {
+            color: white;
+            background-color: #4a6bff;
+            border-color: #4a6bff;
+        }
+
+        .email:hover {
+            background-color: #3a5bef;
+        }
+
+        .divider {
+            display: flex;
+            align-items: center;
+            margin: 25px 0;
+            color: #999;
+            font-size: 14px;
+        }
+
+        .divider::before, .divider::after {
+            content: "";
+            flex: 1;
+            border-bottom: 1px solid #eee;
+        }
+
+        .divider::before {
+            margin-right: 15px;
+        }
+
+        .divider::after {
+            margin-left: 15px;
+        }
+
+        .legal-text {
+            font-size: 12px;
+            color: #777;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .legal-text a {
+            color: #4a6bff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .legal-text a:hover {
+            text-decoration: underline;
+        }
+
+        .alt-auth-btn {
+            background: none;
+            border: none;
+            color: #4a6bff;
+            cursor: pointer;
+            font-size: 15px;
+            padding: 8px;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+
+        .alt-auth-btn:hover {
+            text-decoration: underline;
+            transform: translateX(5px);
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 13px;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="auth-container">
+        <div class="logo">
+            <img src="https://via.placeholder.com/150x50?text=Your+Logo" alt="Company Logo">
+            <h2>YourBrand</h2>
+        </div>
+        
+        <h1>Log in or sign up in seconds</h1>
+        <p class="subtitle">Use your email or another service to continue with us (it's free)!</p>
+        
+        <div class="auth-options">
+            <button class="auth-btn google">
+                <img src="https://www.google.com/favicon.ico" alt="Google icon"> Continue with Google
+            </button>
+            <button class="auth-btn facebook">
+                <img src="https://static.xx.fbcdn.net/rsrc.php/yT/r/aGT3gskzWBf.ico" alt="Facebook icon"> Continue with Facebook
+            </button>
+            <button class="auth-btn email">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTIwIDRINGMtMS4xIDAtMiAuOS0yIDJ2MTJjMCAxLjEuOSAyIDIgMmgxNmMxLjEgMCAyLS45IDItMlY2YzAtMS4xLS45LTItMi0yem0tOCA3bC0zLjUgMi4yTDUgMTFWN2w3IDQgNy00djR6IiBmaWxsPSJ3aGl0ZSIvPjwvc3ZnPg==" alt="Email icon"> Continue with email
+            </button>
+        </div>
+        
+        <div class="divider">
+            <span>or</span>
+        </div>
+        
+        <div class="legal-text">
+            <p>By continuing, you agree to our <a href="#">Terms of Use</a> and acknowledge you've read our <a href="#">Privacy Policy</a>.</p>
+        </div>
+        
+        <div class="alternative-option">
+            <button class="alt-auth-btn">Sign up with your work email →</button>
+        </div>
+        
+        <div class="footer">
+            © 2023 YourBrand. All rights reserved.
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Google login
+            document.querySelector('.google').addEventListener('click', function() {
+                console.log('Google login clicked');
+                // Implement actual Google OAuth here
+                // window.location.href = '/auth/google';
+            });
+            
+            // Facebook login
+            document.querySelector('.facebook').addEventListener('click', function() {
+                console.log('Facebook login clicked');
+                // Implement actual Facebook OAuth here
+                // window.location.href = '/auth/facebook';
+            });
+            
+            // Email login
+            document.querySelector('.email').addEventListener('click', function() {
+                console.log('Email login clicked');
+                // Show email login form or redirect
+                // window.location.href = '/auth/email';
+            });
+            
+            // Alternative option
+            document.querySelector('.alt-auth-btn').addEventListener('click', function() {
+                console.log('Work email signup clicked');
+                // Handle work email signup
+                // window.location.href = '/auth/work-email';
+            });
+        });
+    </script>
+</body>
+</html>
